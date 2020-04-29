@@ -21,6 +21,8 @@ public class CountingCharacters {
             } else {
                 Integer val = count.get(l);
                 count.put(l, val + 1);
+
+                System.out.println(count);
             }
         }
     }

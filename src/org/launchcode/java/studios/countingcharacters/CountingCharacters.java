@@ -22,6 +22,7 @@ public class CountingCharacters {
                 count.put(l, val + 1);
 
                 System.out.println(count);
+                input.close();
             }
         }
     }

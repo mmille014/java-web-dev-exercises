@@ -76,6 +76,7 @@ public class Alice {
         String newAw = searchTerm;
         // Print the new string.
         System.out.println("The new string is: " + searchTerm);
+        input.close();
     }
 }
 

@@ -1,4 +1,12 @@
+/* 3.7.3. HashMap Practice
+Make a program similar to GradebookHashMap that does the following:
+It takes in student names and ID numbers (as integers) instead of names and grades.
+The keys should be the IDs and the values should be the names.
+Modify the roster printing code accordingly. */
+
+
 package exercises;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -27,13 +35,13 @@ public class HashMapPractice {
                 // Read in the newline (that comes after the Integer) before looping back
                 input.nextLine();
             }
-        } while(!studentName.equals(""));
+        } while (!studentName.equals(""));
 
         input.close();
 
         // Modify the roster printing code accordingly: <Name>'s ID: <ID>
-        System.out.println("Class roster: ");
-        for(Map.Entry<Integer, String> student : students.entrySet()) {
+        System.out.println("\nClass roster: ");
+        for (Map.Entry<Integer, String> student : students.entrySet()) {
             System.out.println(student.getValue() + "'s ID: " + student.getKey());
         }
 
